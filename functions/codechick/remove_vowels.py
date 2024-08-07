@@ -2,9 +2,10 @@
 
 
 def remove_vowels(txt):
-    vowels = []
-    remove = ''
-    for i in txt:
-        if i !='A' and i !='U' and i !='E' and i !='O' and i !='I' and i !='a' and i !='u' and i !='e' and i !='o' and i !='i':
-            vowels.append(i)
-    return remove.join(vowels)
+    vowels = 'aeiuo'
+
+    result = ''
+    for let in txt:
+        if let.lower() not in vowels:
+            result += let
+    return result

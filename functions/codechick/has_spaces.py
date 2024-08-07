@@ -2,4 +2,9 @@
 
 
 def has_spaces(txt):
-    return txt.count(" ")
+    return " " in txt
+
+    # if " " in txt:
+    #     return True
+    # else:
+    #     return False

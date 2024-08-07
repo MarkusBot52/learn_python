@@ -2,7 +2,7 @@
 
 
 def should_serve_drinks(age, on_break):
-    if age >= 18 and on_break == False:
+    if (age >= 18) and (not on_break):
         return True
     else:
         return False
